@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button id="cancelQuiz">Cancel Quiz</button>
+    </nav>
+    <div class="filter-buttons">
+        <button id="filterHTML">HTML</button>
+        <button id="filterCSS">CSS</button>
+        <button id="filterJavaScript">JavaScript</button>
+    </div>
+    <div id="quizContainer">
+        <div id="leftPanel">
+            <div id="timer">00:30</div>
+            <h1 id="questionTitle"></h1>
+            <ul id="optionsList"></ul>
+            <button id="submitAnswer">Submit Answer</button>
+        </div>
+        <div id="rightPanel">
+            <ul id="questionList">
+                <!-- List of questions will be populated here dynamically -->
+            </ul>
+        </div>
+    </div>
+    <div id="resultCard" style="display:none;">
+        <h2 id="resultText"></h2>
+        <button id="restartQuiz">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
